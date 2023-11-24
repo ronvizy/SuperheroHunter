@@ -1,0 +1,216 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+.mainDiv{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.container{
+    width: 50vw;
+    height: 100vh;
+    color:#FFF;
+    /* background-color: rgb(237, 193, 16); */
+    /* background-color: blue; */
+    background-color: rgb(97, 212, 44);
+  
+    
+    /* text-orientation: upright; */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap; 
+    align-items: start;
+    justify-content: center;  
+    overflow:scroll ; 
+     
+     
+}
+
+
+.container> span{
+    /* margin-left: -400px; */
+    margin-left: -3vw;
+    margin-top: 0.3em;
+    font-size: 250px;
+    font-weight: bolder;
+    writing-mode: vertical-lr;
+    /* overflow: scroll; */
+    letter-spacing: 50px;
+    font-family: 'Alumni Sans Inline One', sans-serif;
+}
+
+
+.avengers{
+    display: flex;
+    flex-direction: column-reverse;
+    margin-left: -12vw;
+    position: relative;
+    background-color: rgba(251, 255, 0, 0.148);
+    /* background-color: aqua; */
+    width: 25vw;
+    border: none;
+    padding: 0px;
+    
+    
+    
+    /* align-items: center; */
+    
+}
+#avg{
+    /* width: 400px;
+    height: 500px; */
+    margin-left: -2px;
+    width: 30vw;
+    height: 70vh;
+    max-width: 50vw;
+    /* background-color: #631f1f; */
+}
+
+.display{
+    width: 50vw;
+    max-width:50vw;
+    height: 100vh;
+    position: sticky;
+    background-color: rgb(18, 51, 137);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap-reverse;
+    
+    /* letter-spacing: -50px; */
+    overflow:hidden ;
+    /* text-align: end; */
+    
+    
+}
+.display> span{
+    /* position: relative; */
+    top: 1em;
+    color: #d8c1c1;
+    justify-content:end;
+    margin-bottom: -5vw;
+    /* align-items: center;
+    font-weight: bolder; */
+    font-size: 450px;
+    /* writing-mode: vertical-lr; */
+    overflow:scroll;
+     text-orientation:upright ;
+     font-family: 'Alumni Sans Inline One', sans-serif; 
+}
+.thanos{
+    position: relative;
+    top: 20vh;
+
+}
+.thanos> img{
+    position: relative;
+    left: 50%;
+    /* left: -150%; */
+    height: 50vh;
+    width: 30vw;
+    max-width: 30vw;
+    /* position: relative; */
+    /* left: 12rem; */
+}
+.input-container{
+    z-index: 1;
+    position: absolute;
+    left: 50%;
+    top: 1.2em;
+    width: 100%;
+    max-width: 1000px;
+    background-color: rgba(255, 0, 30, 0.881);
+    /* display: grid; */
+    border-radius: 0.5em;
+    padding: 3em 2em;
+    transform: translate(-50%);
+    backdrop-filter: blur(30px);
+}
+
+.input{
+    /* padding: 1em 0.5em; */
+    display: grid;
+    grid-template-columns: 9fr 3fr;
+    gap: 1em;
+
+}
+input{
+    padding: 1em 0.5em;
+    background-color: rgb(8, 28, 25);
+    color: #FFF;
+    border: none;
+    border-radius: 0.5em;
+
+}
+button{
+    outline: none;
+    border-radius: 0.5em;
+    border: none;
+    background-color: rgb(0, 46, 137);
+    color: #FFF;
+    cursor: pointer;
+}
+button:hover{
+    filter: brightness(125);
+    color: black;
+    font-weight: bold;
+}
+
+.container-character-image{
+    background-color: #FFF;
+    padding: 0.5em;
+    height: 9.37em;
+    width: 9.37em;
+    display: block;
+    margin: auto;
+    margin-top: 2%;
+    border-radius: 50%;
+}
+
+.container-character-image img{
+    width: 100%;
+    position: relative;
+    width: block;
+    border-radius: 50%;
+}
+
+.character-name{
+    padding: 0.5em 0.8em 0;
+    text-align: center;
+    color: #FFF;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    font-weight: 600;
+}
+.character-description{
+    text-align: justify;
+    color: rgb(219, 219, 219);
+    line-height: 2em;
+    font-weight: 300;
+    
+}
+.list {
+    position: absolute;
+    width: 60%;
+    max-height: 70vh;
+    background-color: rgb(30, 127, 142);
+    color: #ffffff;
+    z-index:1;
+    overflow: scroll;
+    
+  }
+  .autocomplete-items {
+    padding: 0.5em;
+    
+  }
+  .autocomplete-items:hover {
+    background-color: #ddd;
+    color: #171821;
+  }
